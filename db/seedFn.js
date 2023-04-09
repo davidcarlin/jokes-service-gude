@@ -1,6 +1,6 @@
-const {sequelize} = require('./db');
-const {Joke} = require('./');
-const jokes = require('./seedData');
+const { sequelize } = require("./db");
+const { Joke } = require("./");
+const jokes = require("./seedData");
 
 const seed = async () => {
   await sequelize.sync({ force: true }); // recreate db
